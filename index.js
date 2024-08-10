@@ -13,7 +13,7 @@ const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
 
 // Connect to MongoDB
-mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.uunmg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`, {
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.uunmg.mongodb.net/?retryWrites=true&w=majority`, {
     useUnifiedTopology: true,
     useNewUrlParser: true // Added this option for connection
 });
